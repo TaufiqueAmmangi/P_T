@@ -1,0 +1,20 @@
+<!-- <div (change)="updateResults()" (keyup)="updateResults()">
+    <input type="text" placeholder="Search" [(ngModel)]="searchValue">
+    <div *ngFor="let id of items | async">
+        <story-item [itemId]="id"></story-item>
+    </div>
+</div> -->
+<div *ngFor="let id of items | async">
+    <story-item [itemId]="id"></story-item>
+</div>
+<div *ngIf="pages$ | async as pages; else loading;" class="paginate">
+    <div *ngIf="currentPage$ | async as page">
+        <button (click)="prevPage()" class="btn" [disabled]="page === 1"><i class="icon icon-back"></i> Prev</button>
+        <span class="pages">{{ page }} of {{ pages }}</span>
+        <button (click)="nextPage()" class="btn" [disabled]="page === pages">Next <i class="icon icon-forward"></i></button>
+    </div>
+</div>
+
+<ng-template #loading>
+    <div class="paginate"><span class="pages">Just a sec...</span></div>
+</ng-template>

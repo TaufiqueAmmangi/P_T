@@ -1,0 +1,36 @@
+@import './shared/variable.scss';
+@import './shared/mixins.scss';
+@import './shared/modules/buttons.scss';
+@import './shared/modules/card.scss';
+@import './shared/common-styling.scss';
+@import './shared/fonts';
+@import '../css/shared/common-classes.scss';
+@import '../css/shared/modules/breadcrumb.scss';
+@import "~font-awesome/css/font-awesome.css";
+@import '~@angular/material/theming';
+@import "~bootstrap/dist/css/bootstrap.css";
+@include mat-core();
+@import "~bootstrap/dist/css/bootstrap.css";
+@include angular-material-theme($Reciproci-theme);
+@import "~ng-pick-datetime/assets/style/picker.min.css";
+html {
+    font-family: 'muliregular', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.4!important;
+    letter-spacing: -.1px!important;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'muliregular'!important;
+    position: unset;
+}
+
+.body {
+    margin: 10px;
+    margin-top: 25px;
+    font-family: 'muliregular'!important;
+}
+
+// @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import './animate.css'

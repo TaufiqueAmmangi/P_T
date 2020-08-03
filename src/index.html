@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hackers Article</title>
+    <meta name="description" content="A Hacker News App with the Angular5 Service Worker" />
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="msapplication-starturl" content="/">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=5anoz8t2b5a3brzi6xun9wmm6zbeg89fotmpyh0qqiku3lh1"></script>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1976d2">
+
+    <!-- 
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@angularfirebase">
+    <meta name="twitter:title" content="Angular5 HNPWA">
+    <meta name="twitter:description" content="A Hacker News App with the Angular5 Service Worker">
+    <meta name="twitter:creator" content="@angularfirebase">
+    <meta name="twitter:image" content="/assets/icons/android-chrome-256x256.png">
+
+    <meta property="og:title" content="Angular 2 HN" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hnpwa-cbf63.firebaseapp.com" />
+    <meta property="og:image" content="/assets/icons/android-chrome-256x256.png" />
+    <meta property="og:description" content="A Hacker News App with the Angular5 Service Worker" />
+    <meta property="og:site_name" content="Angular5 HNPWA" /> -->
+
+
+
+
+    <style>
+        .splash {
+            opacity: 0;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            color: #272c33;
+            padding-top: 25vh;
+            text-align: center;
+            z-index: -1;
+            font-family: monospace;
+        }
+        
+        app-root:empty+.splash {
+            opacity: 1;
+            z-index: 100;
+        }
+        
+        .splash h1 {
+            margin-bottom: 50px;
+        }
+        
+        ;
+    </style>
+
+
+</head>
+
+<body>
+
+    <app-root></app-root>
+
+    <div class="splash" id="content">
+        <img src="/assets/icons/logo.svg" width="256px" alt="Angular5 PWA logo">
+        <h1>Hacker News PWA...</h1>
+    </div>
+
+
+
+
+    <noscript>
+        <p>
+          Sorry, JavaScript must be enabled to use this app
+        </p>
+    </noscript>
+
+</body>
+
+</html>
